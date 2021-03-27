@@ -16,9 +16,17 @@
   "npmScope": "music",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NWJmNjJmYjgtYzIyNS00NjlmLTljZTYtMmM1NGI0ODgyMjRifHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -28,7 +36,9 @@
     },
     "tone-pier-e2e": {
       "tags": [],
-      "implicitDependencies": ["tone-pier"]
+      "implicitDependencies": [
+        "tone-pier"
+      ]
     }
   }
 }
